@@ -617,6 +617,11 @@ margin-left: auto;
 }
 
 .footer-form-input {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    color: #fff;
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
@@ -626,14 +631,14 @@ margin-left: auto;
     background-color: transparent;
     color: #fff;
 
-    transition-property: border;
+    transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-input:hover,
 .footer-form-input:focus {
-border: 1px solid #31d0aa;
+border-color: #31d0aa;
 }
 
 
@@ -815,6 +820,7 @@ border: 1px solid #31d0aa;
 
 .modal-field-wrapper{
 position: relative;
+margin-bottom: 8px;
 }
 
 .modal-field-icon {
@@ -896,7 +902,7 @@ position: relative;
 }
 
 .modal-field {
-    margin-bottom: 8px;
+    
 }
 
 .modal-field-comment .modal-textarea {
