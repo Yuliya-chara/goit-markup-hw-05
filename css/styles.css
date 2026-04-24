@@ -874,7 +874,8 @@ margin-bottom: 8px;
 }
 
 .modal-checkbox {
-    transition-property: fill border background-color;
+    border: 1px solid;
+    transition-property: fill, border-color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -889,21 +890,22 @@ margin-bottom: 8px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     width: 16px;
     height: 16px;
+    
+    transition-property: fill, border-color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked + .modal-checkbox-label .check-mark {
     fill: #f4f4fd;
-    border: 1px solid #404bbf;
+    border-color: #404bbf;
     background-color: #404bbf;
 }
 
 .modal-checkbox:focus + .modal-checkbox-label .check-mark {
-    border: 1px solid #404bbf;
+    border-color: #404bbf;
 }
 
-.modal-field {
-    
-}
 
 .modal-field-comment .modal-textarea {
     margin-bottom: 16px;
