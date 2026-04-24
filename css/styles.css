@@ -624,7 +624,17 @@ color: #434455;
     padding: 8px 16px;
     background-color: transparent;
     color: #fff;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.footer-form-input:hover,
+.footer-form-input:focus {
+border: 1px solid #31d0aa;
+}
+
 
 .footer-form-input::placeholder {
     font-weight: 400;
@@ -648,7 +658,17 @@ color: #434455;
     background-color: #4d5ae5;
     border: none;
     margin-left: 24px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+    background-color: #31d0aa;
+}
+
 
 .submit-icon {
     fill: #fff;
@@ -667,9 +687,9 @@ color: #434455;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     
-    /*opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    pointer-events: none;*/
+    pointer-events: none;
 }
 
 .is-open {
@@ -688,15 +708,12 @@ color: #434455;
     min-height: 584px;
     background-color: #fcfcfc;
     border-radius: 4px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 24px;
+    padding: 24px;
 }
 
 .button-closure {
     position: absolute;
     border-radius: 100%;
-    fill: #e7e9fc;
     top: 24px;
     right: 24px;
     width: 24px;
@@ -715,6 +732,13 @@ color: #434455;
     text-align: center;
     max-width: 360px;
     margin-bottom: 16px;
+    margin-top: 72px;
+}
+
+.button-closure-icon {
+    background-color: #e7e9fc;
+    fill: #2e2f42;
+    border: 1px solid #e7e9fc;
 }
 
 .modal-input {
@@ -789,13 +813,13 @@ position: relative;
     color: #8e8f99;
     display: flex;
     align-items: center;
+}
 
-    a {
+.modal-checkbox-label a {
     line-height: 133%;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
-}
 }
 
 .modal-checkbox {
