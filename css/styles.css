@@ -689,10 +689,17 @@ border: 1px solid #31d0aa;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     
-    /* opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    pointer-events: none; */
+    pointer-events: none;
 }
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
 
 .modal {
     position: absolute;
@@ -717,7 +724,7 @@ border: 1px solid #31d0aa;
     height: 24px;
     margin-bottom: 24px;
     background-color: #e7e9fc;
-    border: rgba(0, 0, 0, 0.1);
+    border: 1px solid #0000001a;
     fill: #2e2f42;
 
     transition-property: background-color, fill;
@@ -758,7 +765,7 @@ border: 1px solid #31d0aa;
     height: 40px;
     padding-left: 38px;
  
-    transition-property: fill border-color;
+    transition-property: fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
@@ -773,6 +780,27 @@ border: 1px solid #31d0aa;
     fill: #4d5ae5;
 }
 
+.modal-input-comment {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    padding-left: 16px;
+
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input-comment::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
 
 .modal-label {
     font-family: "Roboto", sans-serif;
@@ -783,7 +811,6 @@ border: 1px solid #31d0aa;
     color: #8e8f99;
     display: block;
     margin-bottom: 4px;
-    margin-top: 8px;
 }
 
 .modal-field-wrapper{
@@ -808,6 +835,14 @@ position: relative;
     color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-input-comment:focus {
+    outline: transparent;
+    border-color: #4d5ae5;
+}
+
+.modal-input-comment:focus + .modal-field-icon {
+    fill: #4d5ae5;
+}
 
 .modal-textarea {
     height: 120px;
@@ -860,7 +895,11 @@ position: relative;
     border: 1px solid #404bbf;
 }
 
-.modal-field .modal-textarea {
+.modal-field {
+    margin-bottom: 8px;
+}
+
+.modal-field-comment .modal-textarea {
     margin-bottom: 16px;
 }
 
