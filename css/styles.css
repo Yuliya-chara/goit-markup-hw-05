@@ -511,7 +511,11 @@ color: #434455;
 .footer-wrapper {
     display: flex;
     align-items: baseline;
+}
 
+.footer-social-subscribe {
+    display: flex;
+    gap: 80px;
 }
 
 .footer-logo {
@@ -591,7 +595,7 @@ color: #434455;
 }
 
 .footer-subscribe-wrapper {
-    margin-left: 80px;
+
 }
 
 .subscribe-title {
@@ -645,11 +649,13 @@ border: 1px solid #31d0aa;
 }
 
 .footer-form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 4px;
-    padding-left: 24px;
-    padding-inline: 8px;
     width: 165px;
     height: 40px;
+    padding: 8px 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -674,7 +680,6 @@ border: 1px solid #31d0aa;
     fill: #fff;
     stroke: none;
     margin-left: 16px;
- 
 }
 
 
@@ -709,6 +714,7 @@ border: 1px solid #31d0aa;
     background-color: #fcfcfc;
     border-radius: 4px;
     padding: 24px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .button-closure {
@@ -719,7 +725,20 @@ border: 1px solid #31d0aa;
     width: 24px;
     height: 24px;
     margin-bottom: 24px;
-    border: none;
+    background-color: #e7e9fc;
+    border: 1px solid #e7e9fc;
+    fill: #2e2f42;
+
+    transition-property: background-color fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.button-closure:hover,
+.button-closure:focus {
+    background-color: #404bbf;
+    fill: #fff;
 }
 
 .modal-title {
@@ -731,14 +750,14 @@ border: 1px solid #31d0aa;
     color: #2e2f42;
     text-align: center;
     max-width: 360px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     margin-top: 72px;
 }
 
 .button-closure-icon {
-    background-color: #e7e9fc;
-    fill: #2e2f42;
-    border: 1px solid #e7e9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-input {
@@ -868,9 +887,16 @@ position: relative;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     color: #fff;
 
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 
-.submit-button:active {
+.submit-button:active,
+.submit-button:focus,
+.submit-button:hover {
 background-color: #404bbf;
 }
 
