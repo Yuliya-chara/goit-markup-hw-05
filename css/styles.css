@@ -595,9 +595,10 @@ color: #434455;
 }
 
 .footer-subscribe-wrapper {
-display: flex;
-flex-direction: column;
-margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+
 }
 
 .subscribe-title {
